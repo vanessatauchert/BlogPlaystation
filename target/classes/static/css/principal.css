@@ -1,0 +1,198 @@
+
+body {
+   background-color: #000;
+}
+
+nav.navbar-transparente {
+   padding: 15px 0;
+   background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+   color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+   color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+
+   color:rgba(255,255,255,.5);
+   border-color:rgba(255,255,255,0.5);
+}
+
+
+#servicos {
+   padding-top: 110px;
+   padding-bottom: 20px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#servicos h3 {
+   color: #EBD64B;
+}
+
+
+#servicoss {
+   padding-top: 50px;
+   padding-bottom: 20px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#servicoss p{
+   color: #343330;
+}
+
+
+#servicosss {
+   padding-top: 50px;
+   padding-bottom: 20px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#servicosss p{
+   color: #d9d9d9;
+}
+
+.imgss{
+	border-radius: 25px;
+}
+
+p {
+   color: #d9d9d9;
+}
+
+
+.albuns {
+   padding: 10px 0;
+}
+
+
+
+.cta {
+   position: relative;
+   margin-top: 25px;
+   padding: 12px 18px;
+   transition: all 0.2s ease;
+   border: none;
+   background: none;
+  }
+  
+  .cta:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: #24248f;
+   border-radius: 50px;
+   background: #24248f;
+   width: 45px;
+   height: 45px;
+   transition: all 0.3s ease;
+   text-decoration: none;
+  }
+  
+  .cta span {
+   position: relative;
+   font-family: "Ubuntu", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   color: #d9d9d9;
+  }
+  
+  .cta svg {
+   position: relative;
+   top: 0;
+   margin-left: 10px;
+   fill: none;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke: #24248f;
+   stroke-width: 2;
+   transform: translateX(-5px);
+   transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+   width: 100%;
+   background: #24248f;
+  }
+  
+  .cta:hover svg {
+   transform: translateX(0);
+   text-decoration: none;
+
+  }
+  
+  .cta:active {
+   transform: scale(0.95);
+   text-decoration: none;
+  }
+
+ .cta img{
+   color: #24248f;
+   
+ }
+
+
+  .ctaa {
+   position: relative;
+   margin-top: 25px;
+   padding: 12px 18px;
+   transition: all 0.2s ease;
+   border: none;
+   background: none;
+  }
+  
+  .ctaa:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: #24248f;
+   border-radius: 50px;
+   background: #24248f;
+   width: 45px;
+   height: 45px;
+   transition: all 0.3s ease;
+  }
+  
+  .ctaa span {
+   position: relative;
+   font-family: "Ubuntu", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   color: #d9d9d9;
+  }
+  
+  .ctaa svg {
+   position: relative;
+   top: 0;
+   margin-left: 10px;
+   fill: none;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke: #24248f;
+   stroke-width: 2;
+   transform: translateX(-5px);
+   transition: all 0.3s ease;
+  }
+  
+  .ctaa:hover:before {
+   width: 100%;
+   background: #24248f;
+  }
+  
+  .ctaa:hover svg {
+   transform: translateX(0);
+  }
+  
+  .ctaa:active {
+   transform: scale(0.95);
+  }

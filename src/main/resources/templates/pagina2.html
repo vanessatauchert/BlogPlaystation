@@ -1,289 +1,195 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="utf-8">
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-	<link rel="stylesheet" th:href="@{css/principal.css}">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<script th:src="@{js/teste.js}">
-	</script>
-	<title>Ex Spring</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{css/principal.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script th:src="@{js/teste.js}">
+    </script>
+    <title>PlaySpring</title>
 
 </head>
 
 <body>
-
-
-	
-	<header>
+<header>
     <!--inicio cabecalho-->
     <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-      <div class="container">
+        <div class="container">
+            <a th:href="@{/}" class="navbar-brand">
+                <img th:src=@{img/psn.png} width="50">
+            </a>
 
-        <a th:href="@{/}" class="navbar-brand">
-          <img th:src=@{img/psn.png} width="50">
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-          <i class="fas fa-bars text-white"></i>
-        </button>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars text-white"></i>
+            </button>
 
-        <div class="collapse navbar-collapse" id="nav-principal">
-          <ul class="navbar-nav ml-auto">
-            <!--menu navegacao-->
-
-            <li class="nav-item">
-              <a th:href="@{/}" class="nav-link">Notícias</a>
-            </li>
-            <li class="nav-item">
-              <a th:href="@{/p1}" class="nav-link">Ps4</a>
-            </li>
-            <li class="nav-item">
-              <a th:href="@{/p2}" class="nav-link">Ps5</a>
-            </li>
-
-        
-
-          </ul>
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <!--menu navegacao-->
+                    <li class="nav-item">
+                        <a th:href="@{/}" class="nav-link">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/p1}" class="nav-link">PS4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/p2}" class="nav-link">PS5</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
-  <!--fim cabecalho-->
+</header>
 
-
-<section id="servicos" th:style="'background: url(/img/fd.png)'">
+<!--fim cabecalho-->
+<section class="servicos" th:style="'background: url(/img/fd.png)'">
     <!--servicos-->
     <div class="container">
-      <!--container-->
-      <div class="row">
-        <!--row-->
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-6">
+                <h3>Console PS5</h3>
 
-        <div class="col-md-6">
-          
+                <p>Reproduza jogos do PS5 e do PS4 em Blu-ray Disc. Você também pode baixar jogos do PS5 e do PS4
+                    digitais a partir da PlayStation® Store.</p>
 
-          <h3>Console PS5</h3>
-          <p>Reproduza jogos do PS5 e do PS4 em Blu-ray Disc. Você também pode baixar jogos do PS5 e do PS4 digitais a partir da PlayStation® Store.</p>
-         
-         <h3>Jogos sem limites</h3>
-         
-          <p>A integração personalizada dos sistemas de conole PS5 permite que os criadores extraiam dados do SSD tão rápido que eles podem desenvolver jogos de formas que antes seriam impossíveis.</p>
+                <h3>Jogos sem limites</h3>
 
-         
-         <a th:href="@{/p1}">
-			<button class="ctaa">
-           
-            <span>Anterior ←</span>
-            
-            
-              
-            </svg></a>
+                <p>A integração personalizada dos sistemas de conole PS5 permite que os criadores extraiam dados do SSD
+                    tão rápido que eles podem desenvolver jogos de formas que antes seriam impossíveis.</p>
 
-           <a th:href="@{/}"><button class="cta">
-              <span>Início →</span>
-              
-              </svg></a>
+                <a th:href="@{/}">
+                    <button class="cta">
+                        <span>Início</span>
+                    </button>
+                </a>
 
-            
-
-            
-          </button>
-
-          
+                <a th:href="@{/p1}">
+                    <button class="ctaa">
+                        <span>Anterior</span>
+                    </button>
+                </a>
             </div>
-
-          <div class="col-md-6">
-
-          <div class="row albuns">
 
             <div class="col-md-6">
-              <img class="imgss" th:src=@{img/ps5.png} width="350px" >
+                <div class="row albuns">
+                    <div class="col-md-6">
+                        <img class="imgss" th:src=@{img/ps5.png} width="350px">
+                    </div>
+                </div>
             </div>
-
-          </div>
         </div>
+    </div>
+</section>
+<!--fim servicos-->
 
-          </div>
-        </div>
-  </section>
-  <!--fim servicos-->
-
-
- <section id="servicoss">
+<section class="servicoss">
     <!--servicos-->
     <div class="container">
-      <!--container-->
-      <div class="row">
-        <!--row-->
-        <div class="col-md-6">
-
-           <div class="row albuns">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-6">
+                <div class="row albuns">
+                    <div class="col-md-6">
+                        <img class="imgss" th:src=@{img/hfw.jpg} width="350px">
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-6">
-              <img class="imgss" th:src=@{img/hfw.jpg} width="350px" >
+                <h3>Horizon Forbidden West</h3>
+
+                <p>Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos
+                    incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon.</p>
             </div>
-
-          </div>
-            
-
-          </div>
-
-         <div class="col-md-6">
-
-          
-          <h3>Horizon Forbidden West</h3>
-          
-         
-         <p>Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon.</p>
-              	
-                  
         </div>
-                        
-        
-            </div>
+    </div>
 
+</section>
+<!--fim servicos-->
 
-          </div>
-        </div>
-        
-
-  </section>
-  <!--fim servicos-->
-  
-  
-  <section id="servicosss" th:style="'background: url(/img/fd.png)'">
+<section class="servicosss" th:style="'background: url(/img/fd.png)'">
     <!--servicos-->
     <div class="container">
-      <!--container-->
-      <div class="row">
-        <!--row-->
-        <div class="col-md-6">
-
-           <div class="row albuns">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-6">
+                <div class="row albuns">
+                    <div class="col-md-6">
+                        <img class="imgss" th:src=@{img/gt7.jpg} width="350px">
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-6">
-              <img class="imgss" th:src=@{img/gt7.jpg} width="350px" >
+                <h3>Gran Turismo® 7</h3>
+
+                <p>Seja você um piloto competitivo ou casual, colecionador, tuner, designer de visuais ou fotógrafo,
+                    encontre seu caminho com um número impressionante de modos de jogo, incluindo favoritos dos fãs como
+                    Campanha GT, Arcade e Escola de Pilotagem.</p>
             </div>
-
-          </div>
-            
-
-          </div>
-
-         <div class="col-md-6">
-
-          
-          <h3>Gran Turismo® 7</h3>
-          
-         
-         <p>Seja você um piloto competitivo ou casual, colecionador, tuner, designer de visuais ou fotógrafo, encontre seu caminho com um número impressionante de modos de jogo, incluindo favoritos dos fãs como Campanha GT, Arcade e Escola de Pilotagem.</p>
-              	
-                  
         </div>
-                        
-        
-            </div>
+    </div>
 
+</section>
+<!--fim servicos-->
 
-          </div>
-        </div>
-        
-
-  </section>
-  <!--fim servicos-->
-  
-  
-  <section id="servicoss">
+<section class="servicoss">
     <!--servicos-->
     <div class="container">
-      <!--container-->
-      <div class="row">
-        <!--row-->
-        <div class="col-md-6">
-
-           <div class="row albuns">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-6">
+                <div class="row albuns">
+                    <div class="col-md-6">
+                        <img class="imgss" th:src=@{img/spm.jpg} width="350px">
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-6">
-              <img class="imgss" th:src=@{img/spm.jpg} width="350px" >
+                <h3>Marvel's Spider-Man: Miles Morales</h3>
+
+                <p>Viva a experiência da ascensão de Miles Morales como o herói que domina novos poderes, incríveis e
+                    explosivos, para se tornar um Homem-Aranha todo especial.</p>
             </div>
-
-          </div>
-            
-
-          </div>
-
-         <div class="col-md-6">
-
-          
-          <h3>Marvel's Spider-Man: Miles Morales</h3>
-          
-         
-         <p>Viva a experiência da ascensão de Miles Morales como o herói que domina novos poderes, incríveis e explosivos, para se tornar um Homem-Aranha todo especial.</p>
-              	
-                  
         </div>
-                        
-        
-            </div>
+    </div>
 
+</section>
+<!--fim servicos-->
 
-          </div>
-        </div>
-        
-
-  </section>
-  <!--fim servicos-->
-
-
-<section id="servicosss" th:style="'background: url(/img/fd.png)'">
+<section class="servicosss" th:style="'background: url(/img/fd.png)'">
     <!--servicos-->
     <div class="container">
-      <!--container-->
-      <div class="row">
-        <!--row-->
-        <div class="col-md-6">
-
-           <div class="row albuns">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-6">
+                <div class="row albuns">
+                    <div class="col-md-6">
+                        <img class="imgss" th:src=@{img/rt.jpg} width="350px">
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-6">
-              <img class="imgss" th:src=@{img/rt.jpg} width="350px" >
+                <h3>Ratchet & Clank™: Em Uma Outra Dimensão</h3>
+
+                <p>Abra caminho em uma aventura interdimensional com Ratchet e Clank. Pule de dimensão em dimensão para
+                    enfrentar um imperador maligno de outra realidade.</p>
             </div>
-
-          </div>
-            
-
-          </div>
-
-         <div class="col-md-6">
-
-          
-          <h3>Ratchet & Clank™: Em Uma Outra Dimensão</h3>
-          
-         
-         <p>Abra caminho em uma aventura interdimensional com Ratchet e Clank. Pule de dimensão em dimensão para enfrentar um imperador maligno de outra realidade.</p>
-              	
-                  
         </div>
-                        
-        
-            </div>
+    </div>
 
-
-          </div>
-        </div>
-        
-
-  </section>
-  <!--fim servicos-->
-  
-
+</section>
+<!--fim servicos-->
 </body>
-
-
-
-
-
-
-
-
 </html>

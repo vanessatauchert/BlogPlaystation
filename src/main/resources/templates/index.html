@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<link rel="stylesheet" th:href="@{css/principal.css}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script th:src="@{js/teste.js}">
+	</script>
+	<title>Ex Spring</title>
+
+
+</head>
+
+<body>
+	
+	<header>
+    <!--inicio cabecalho-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+      <div class="container">
+
+        <a th:href="@{/}" class="navbar-brand">
+          <img th:src=@{img/psn.png} width="50">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <!--menu navegacao-->
+
+            <li class="nav-item">
+              <a th:href="@{/}" class="nav-link">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a th:href="@{/p1}" class="nav-link">Ps4</a>
+            </li>
+            <li class="nav-item">
+              <a th:href="@{/p2}" class="nav-link">Ps5</a>
+            </li>
+
+        
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--fim cabecalho-->
+
+
+
+<section id="servicos" th:style="'background: url(/img/fd.png)'">
+    <!--servicos-->
+    <div class="container">
+      <!--container-->
+      <div class="row">
+        <!--row-->
+
+        <div class="col-md-6">
+          
+
+          <h3>ESTE MÊS</h3>
+          <h3>NO PLAYSTATION</h3>
+         
+         <p>O seu guia para o que vem por aí no próximo mês para PS4 e PS5, como novos lançamentos, recursos detalhados e guias especializados.</p>
+         
+         	
+                   <a th:href="@{/p1}"><button class="cta">
+              <span>Próximo →</span>
+              
+              </svg></a>
+          </button>
+            
+
+          </div>
+
+         <div class="col-md-6">
+
+          <div class="row albuns">
+
+            <div class="col-md-6">
+              <img class="imgss" th:src=@{img/snp.jpg} width="300px" >
+            </div>
+
+          </div>
+        </div>
+            
+              
+            
+     
+         
+
+          
+            </div>
+
+         
+
+          </div>
+        </div>
+        
+        
+        
+        
+  </section>
+  <!--fim servicos-->
+  
+  
+  <section id="servicoss">
+    <!--servicos-->
+    <div class="container">
+      <!--container-->
+      <div class="row">
+        <!--row-->
+        <div class="col-md-6">
+
+           <div class="row albuns">
+
+            <div class="col-md-6">
+              <img class="imgss" th:src=@{img/snp2.jpg} width="350px" >
+            </div>
+
+          </div>
+            
+
+          </div>
+
+         <div class="col-md-6">
+
+          
+          <h3>Sniper Elite 5</h3>
+          
+         
+         <p>Na quinta edição explosiva da premiada série tática de furtividade e ação, junte-se à Resistência Francesa nos últimos e decisivos meses da Segunda Guerra Mundial e trabalhe para derrotar um aterrorizante plano nazista para virar o jogo desse conflito.</p>
+              	
+                  
+        </div>
+                        
+        
+            </div>
+
+
+          </div>
+        </div>
+        
+
+  </section>
+  <!--fim servicos-->
+  
+  
+  <section id="servicosss" th:style="'background: url(/img/fd.png)'">
+    <!--servicos-->
+    <div class="container">
+      <!--container-->
+      <div class="row">
+        <!--row-->
+        <div class="col-md-6">
+
+           <div class="row albuns">
+
+            <div class="col-md-6">
+              <img class="imgss" th:src=@{img/god2.jpg} width="350px" >
+            </div>
+
+          </div>
+            
+
+          </div>
+
+         <div class="col-md-6">
+
+          
+          <h3>God of War™: Ragnarök</h3>
+          
+         
+         <p>Do Santa Monica Studio, temos a sequência da versão de 2018 de God of War aclamada pela crítica. Kratos e Atreus devem viajar pelos Nove Reinos para encontrar respostas e se preparar para a batalha profetizada que causará o fim do mundo.</p>
+              	
+                  
+        </div>
+                        
+        
+            </div>
+
+
+          </div>
+        </div>
+        
+
+  </section>
+  <!--fim servicos-->
+  
+  
+  <section id="servicoss">
+    <!--servicos-->
+    <div class="container">
+      <!--container-->
+      <div class="row">
+        <!--row-->
+        <div class="col-md-6">
+
+           <div class="row albuns">
+
+            <div class="col-md-6">
+              <img class="imgss" th:src=@{img/hw.jpg} width="350px" >
+            </div>
+
+          </div>
+            
+
+          </div>
+
+         <div class="col-md-6">
+
+          
+          <h3>Hogwarts Legacy</h3>
+          
+         
+         <p>Hogwarts Legacy é um jogo de ação e RPG imersivo e de mundo aberto, ambientado no primeiro mundo apresentado nos livros da série Harry Potter. 
+
+Viva na Hogwarts do século XIX e decida o futuro do mundo bruxo.</p>
+              	
+                  
+        </div>
+                        
+        
+            </div>
+
+
+          </div>
+        </div>
+        
+
+  </section>
+  <!--fim servicos-->
+
+
+<section id="servicosss" th:style="'background: url(/img/fd.png)'">
+    <!--servicos-->
+    <div class="container">
+      <!--container-->
+      <div class="row">
+        <!--row-->
+        <div class="col-md-6">
+
+           <div class="row albuns">
+
+            <div class="col-md-6">
+              <img class="imgss" th:src=@{img/fs.jpg} width="350px" >
+            </div>
+
+          </div>
+            
+
+          </div>
+
+         <div class="col-md-6">
+
+          
+          <h3>Forspoken</h3>
+          
+         
+         <p>Entre de cabeça em um RPG de ação eletrizante sobre Frey Holland e sua busca para descobrir seu lugar no mundo. 
+
+Transportada para a bela e cruel terra de Athia, Frey precisa usar suas habilidades mágicas recém-descobertas para explorar vastas paisagens, enfrentar criaturas monstruosas, derrotar poderosas matriarcas, conhecidas como Tantas, e encontrar um caminho para casa.</p>
+              	
+                  
+        </div>
+                        
+        
+            </div>
+
+
+          </div>
+        </div>
+        
+
+  </section>
+  <!--fim servicos-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

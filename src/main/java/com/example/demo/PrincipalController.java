@@ -20,7 +20,10 @@ public class PrincipalController {
 	@GetMapping("/p2")
 	public String Pagina2() {
 		return "pagina2";
+
+	}@GetMapping("/p3")
+	public String Pagina3() {
+		return "pagina3";
 	}
-	
 
 }

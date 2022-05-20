@@ -2,6 +2,14 @@ body {
    background-color: #000;
 }
 
+label{
+color: white;
+}
+
+.center{
+text-align: center;
+}
+
 nav.navbar-transparente {
    padding: 15px 0;
    background: rgba(0, 0, 0, 0.6);

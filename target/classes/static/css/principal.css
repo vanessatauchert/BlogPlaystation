@@ -2,6 +2,17 @@ body {
    background-color: #000;
 }
 
+h1{
+    text-align: center;
+}
+label{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
 nav.navbar-transparente {
    padding: 15px 0;
    background: rgba(0, 0, 0, 0.6);

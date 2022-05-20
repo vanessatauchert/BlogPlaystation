@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{css/principal.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script th:src="@{js/teste.js}"></script>
+    <title>Fale Conosco</title>
+</head>
+
+<body  th:style="'background: url(/img/fd.png)'">
+<header>
+    <!--inicio cabecalho-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+        <div class="container">
+            <a th:href="@{/}" class="navbar-brand">
+                <img th:src=@{img/psn.png} width="50">
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <!--menu navegacao-->
+                    <li class="nav-item">
+                        <a th:href="@{/}" class="nav-link">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/p1}" class="nav-link">PS4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/p2}" class="nav-link">PS5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/p3}" class="nav-link">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="servicos">
+    <div>
+        <h1>Mensagem enviada com sucesso!</h1>
+    </div>
+</section>
+</body>
+</html>

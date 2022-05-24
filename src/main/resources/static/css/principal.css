@@ -91,9 +91,9 @@ p{
    position: absolute;
    top: 0;
    left: 0;
-   display: #24248f;
+   display: black;
    border-radius: 50px;
-   background: #24248f;
+   background: black;
    width: 45px;
    height: 45px;
    transition: all 0.3s ease;
@@ -116,7 +116,7 @@ p{
    fill: none;
    stroke-linecap: round;
    stroke-linejoin: round;
-   stroke: #24248f;
+   stroke: black;
    stroke-width: 2;
    transform: translateX(-5px);
    transition: all 0.3s ease;
@@ -124,7 +124,7 @@ p{
   
   .cta:hover:before {
    width: 100%;
-   background: #24248f;
+   background: black;
   }
   
   .cta:hover svg {

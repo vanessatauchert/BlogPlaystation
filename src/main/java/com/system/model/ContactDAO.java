@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
+import java.util.Map;
 
 @Repository
 public class ContactDAO {
@@ -29,5 +30,13 @@ public class ContactDAO {
         obj[2] = contact.getEmail();
 
         jdbc.update(sql, obj);
+    }
+
+    public Map<String, Object> getContact(int id) {
+        String sql = "SELECT * FROM form WHERE form.id = ?";
+        Object[] obj = new Object[1];
+        obj[0] = id;
+
+        return jdbc.queryForMap(sql, obj);
     }
 }

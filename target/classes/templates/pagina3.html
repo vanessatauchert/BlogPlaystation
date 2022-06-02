@@ -11,7 +11,7 @@
     <title>Fale Conosco</title>
 </head>
 
-<body  th:style="'background: url(/img/fd.png)'">
+<body th:style="'background: url(/img/fd.png)'">
 <header>
     <!--inicio cabecalho-->
     <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
@@ -39,28 +39,72 @@
                     <li class="nav-item">
                         <a th:href="@{/p3}" class="nav-link">Fale Conosco</a>
                     </li>
-                    <li class="nav-item">
-                        <a th:href="@{/mensagens}" class="nav-link">Painel de Controle</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 
-<section class="servicos">
-    <div>
-        <form class="center" th:action="${contact}" method="POST" th:object="${contato}">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" size="47" maxlength="40" required th:field="*{name}"><br>
-            <label for="email">E-mail:</label><br>
-            <input type="text" id="email" name="email" size="47" maxlength="40" required th:field="*{email}"><br>
-            <label for="msg">Mensagem:</label><br>
-            <textarea id="msg" name="msg" rows="5" cols="50" maxlength="500" th:field="*{msg}"></textarea><br><br>
 
-            <input type="submit" value="Enviar">
-        </form>
+<section class="servicos" th:style="'background: url(/img/fd.png)'">
+    <!--servicos-->
+    <div class="container">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <form class="col-md-6 was-validated" th:action="${contact}" method="POST" th:object="${contato}">
+                <br>
+                <h3>Preencha o formulário</h3>
+                <br>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="form-control" id="name"
+                               placeholder="Digite seu nome completo" name="name" required th:field="*{name}">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div><br>
+
+                    <div class="form-group ">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email"
+                               placeholder="Digite seu e-mail" name="email" required th:field="*{email}">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">
+                            Ex: teste@teste.com
+                        </div>
+                    </div><br>
+
+                    <div class="form-group ">
+                        <label for="msg">Mensagem:</label>
+                        <textarea class="form-control" id="msg" rows="4" required th:field="*{msg}"></textarea>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div><br>
+
+                    <div class="form-group form-check ">
+                        <label class="form-check-label ">
+                            <input class="form-check-input text-center" type="checkbox"
+                                   name="remember" required> Confirmo as informações
+                            <div class="valid-feedback "></div>
+                            <div class="invalid-feedback "></div>
+                        </label>
+                    </div>
+
+                    <button class="cta" type="submit">
+                        <span>Enviar</span>
+                    </button>
+            </form>
+
+            <div class="col-md-4">
+                <div class="row albuns">
+                    <div class="col-md-4">
+                        <img class="imgss" th:src=@{img/ast.png} width="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+<!--fim servicos-->
 </body>
 </html>

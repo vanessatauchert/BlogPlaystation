@@ -49,7 +49,7 @@
 </header>
 
 <section class="servicos">
-  <form action="#" th:action="@{'/upd/' + ${id}}" method="post" th:object="${contato}">
+  <form class="col-md-6 was-validated" action="#" th:action="@{'/upd/' + ${id}}" method="post" th:object="${contato}">
     <label>Nome</label>
     <input type="text" th:field="*{name}"><br>
     <label>Email</label>

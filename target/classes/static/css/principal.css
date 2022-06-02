@@ -51,7 +51,7 @@ nav.navbar-transparente {
 }
 
 #servicoss p{
-   color: black;
+   color: #343330;
 }
 
 .servicosss {
@@ -62,7 +62,7 @@ nav.navbar-transparente {
 }
 
 #servicosss p{
-   color: black;
+   color: #d9d9d9;
 }
 
 .imgss{
@@ -70,7 +70,7 @@ nav.navbar-transparente {
 }
 
 p{
-   color: black;
+   color: #d9d9d9;
 }
 
 .albuns {
@@ -91,9 +91,9 @@ p{
    position: absolute;
    top: 0;
    left: 0;
-   display: black;
+   display: #24248f;
    border-radius: 50px;
-   background: black;
+   background: #24248f;
    width: 45px;
    height: 45px;
    transition: all 0.3s ease;
@@ -116,7 +116,7 @@ p{
    fill: none;
    stroke-linecap: round;
    stroke-linejoin: round;
-   stroke: black;
+   stroke: #24248f;
    stroke-width: 2;
    transform: translateX(-5px);
    transition: all 0.3s ease;
@@ -124,7 +124,7 @@ p{
 
   .cta:hover:before {
    width: 100%;
-   background: black;
+   background: #24248f;
   }
 
   .cta:hover svg {

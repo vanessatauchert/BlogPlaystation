@@ -49,15 +49,21 @@
 </header>
 
 <section class="servicos">
-    <table>
-        <thead>
+
+<div class="container">
+        <!--container-->
+        <div class="row">
+            <!--row-->
+            <div class="col-md-12">
+    <table class="table  table-hover table-dark">
+        <thead class="thead-dark">
         <tr>
-            <td>ID</td>
-            <td>Nome</td>
-            <td>E-mail</td>
-            <td>Mensagem</td>
-            <td> </td>
-            <td> </td>
+            <td class="table-info"><b>ID</b></td>
+            <td class="table-info"><b>Nome</b></td>
+            <td class="table-info"><b>E-mail</b></td>
+            <td class="table-info"><b>Mensagem</b></td>
+            <td class="table-info"> </td>
+            <td class="table-info"> </td>
         </tr>
         </thead>
         <tbody>
@@ -68,17 +74,22 @@
             <td th:text="${msg.msg}"></td>
             <td>
                 <a th:href="@{'/upd/' + ${msg.id}}">
-                    Editar
+                    Editar <img th:src=@{img/editar.png} width="18px">
                 </a>
             </td>
             <td>
                 <form class="center" th:action="@{'apagar/mensagens/' + ${msg.id}}" method="post">
-                    <input type="submit" value="Deletar">
+                    <input type="submit" value="Deletar"> <img th:src=@{img/lixo.png} width="21px">
                 </form>
             </td>
         </tr>
         </tbody>
+        
     </table>
+    
+    </div>
+    </div>
+    </div>
 </section>
 </body>
 </html>

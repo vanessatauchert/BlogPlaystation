@@ -12,52 +12,37 @@
 </head>
 
 <body th:style="'background: url(/img/fd.png)'">
-<header>
-  <!--inicio cabecalho-->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-    <div class="container">
-      <a th:href="@{/}" class="navbar-brand">
-        <img th:src=@{img/psn.png} width="50">
-      </a>
 
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-        <i class="fas fa-bars text-white"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="nav-principal">
-        <ul class="navbar-nav ml-auto">
-          <!--menu navegacao-->
-          <li class="nav-item">
-            <a th:href="@{/}" class="nav-link">Notícias</a>
-          </li>
-          <li class="nav-item">
-            <a th:href="@{/p1}" class="nav-link">PS4</a>
-          </li>
-          <li class="nav-item">
-            <a th:href="@{/p2}" class="nav-link">PS5</a>
-          </li>
-          <li class="nav-item">
-            <a th:href="@{/p3}" class="nav-link">Fale Conosco</a>
-          </li>
-          <li class="nav-item">
-            <a th:href="@{/mensagens}" class="nav-link">Painel de Controle</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <section class="servicos">
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+        <!--container-->
+        <div class="row">
   <form class="col-md-6 was-validated" action="#" th:action="@{'/upd/' + ${id}}" method="post" th:object="${contato}">
-    <label>Nome</label>
-    <input type="text" th:field="*{name}"><br>
-    <label>Email</label>
-    <input type="text" th:field="*{email}"><br>
-    <label>Mensagem</label>
-    <input type="text" th:field="*{msg}"><br>
+    
+    <h3>Editar dados do usuário</h3><br>
+    
+    <div class="form-group">
+    <label><font color="#F0FFFF">Nome</font></label>
+    <input type="text" class="form-control" th:field="*{name}"><br>
+    <label><font color="#F0FFFF">Email</font></label>
+    <input type="text" class="form-control" th:field="*{email}"><br>
+    <label><font color="#F0FFFF">Mensagem</font></label>
+    <textarea rows="4" class="form-control" th:field="*{msg}"></textarea><br>
+    
+    
     <input type="submit" value="Atualizar">
+    </div>
   </form>
+  
+  </div>
+  </div>
 </section>
+
+
 </body>
 </html>

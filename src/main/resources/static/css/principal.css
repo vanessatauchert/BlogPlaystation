@@ -85,7 +85,7 @@ p{
    border: none;
    background: none;
   }
-  
+
   .cta:before {
    content: "";
    position: absolute;
@@ -99,7 +99,7 @@ p{
    transition: all 0.3s ease;
    text-decoration: none;
   }
-  
+
   .cta span {
    position: relative;
    font-family: "Ubuntu", sans-serif;
@@ -108,7 +108,7 @@ p{
    letter-spacing: 0.05em;
    color: #d9d9d9;
   }
-  
+
   .cta svg {
    position: relative;
    top: 0;
@@ -121,17 +121,17 @@ p{
    transform: translateX(-5px);
    transition: all 0.3s ease;
   }
-  
+
   .cta:hover:before {
    width: 100%;
    background: black;
   }
-  
+
   .cta:hover svg {
    transform: translateX(0);
    text-decoration: none;
   }
-  
+
   .cta:active {
    transform: scale(0.95);
    text-decoration: none;
@@ -149,7 +149,7 @@ p{
    border: none;
    background: none;
   }
-  
+
   .ctaa:before {
    content: "";
    position: absolute;
@@ -162,7 +162,7 @@ p{
    height: 45px;
    transition: all 0.3s ease;
   }
-  
+
   .ctaa span {
    position: relative;
    font-family: "Ubuntu", sans-serif;
@@ -171,7 +171,7 @@ p{
    letter-spacing: 0.05em;
    color: #d9d9d9;
   }
-  
+
   .ctaa svg {
    position: relative;
    top: 0;
@@ -184,16 +184,16 @@ p{
    transform: translateX(-5px);
    transition: all 0.3s ease;
   }
-  
+
   .ctaa:hover:before {
    width: 100%;
    background: #24248f;
   }
-  
+
   .ctaa:hover svg {
    transform: translateX(0);
   }
-  
+
   .ctaa:active {
    transform: scale(0.95);
   }

@@ -52,7 +52,6 @@
         <!--container-->
         <div class="row">
             <!--row-->
-<<<<<<< HEAD
             <form class="col-md-6 was-validated" th:action="${contact}" method="POST" th:object="${contato}">
                 <br>
                 <h3>Preencha o formulário</h3>
@@ -95,94 +94,8 @@
                         <span>Enviar</span>
                     </button>
             </form>
-=======
-            <div class="col-md-6">
-            <br>
-            <h3>Preencha o formulário</h3>
-            <br>
-               <form class="was-validated" th:action="${contact}" method="POST" th:object="${contato}">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" class="form-control" id="name"
-                    placeholder="Digite seu nome completo" name="name" required th:field="*{name}">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">
-                    
-                </div>
-            </div>
-            
-            <br>
-            
-            <div class="form-group ">
-                <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email"
-                    placeholder="Digite seu e-mail" name="email" required th:field="*{email}">
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">
-                    Ex: teste@teste.com
-                </div>
-            </div>
-            
-            <br>
-            
-            <div class="form-group ">
-                <label for="msg">Mensagem:</label>
-                <textarea class="form-control" id="msg" rows="4" required th:field="*{msg}"></textarea>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">
-                   
-                </div>
-            </div>
-            
-            <br>
-            
-            <div class="form-group form-check ">
-                <label class="form-check-label ">
-                    <input class="form-check-input text-center" type="checkbox"
-                        name="remember" required> Confirmo as informações
-                    <div class="valid-feedback "></div>
-                    <div class="invalid-feedback ">
-                        
-                    </div>
-                </label>
-            </div>
-            
-                    <button class="cta" type="submit">
-                        <span>Enviar</span>
-                    </button>
-            
-         
-            
-            
-            
-            </div>
-            
-    
->>>>>>> eda998fbd40d54652e2467235da65f4f1fc083ba
-
-            <div class="col-md-4">
-                <div class="row albuns">
-                    <div class="col-md-4">
-<<<<<<< HEAD
-                        <img class="imgss" th:src=@{img/ast.png} width="500px">
-=======
-                    
-                    
-                        <img class="imgss" th:src=@{img/ast.png} width="500px">
-                        
-                        
->>>>>>> eda998fbd40d54652e2467235da65f4f1fc083ba
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
-<!--fim servicos-->
-<<<<<<< HEAD
-=======
-
-
->>>>>>> eda998fbd40d54652e2467235da65f4f1fc083ba
 </body>
 </html>
